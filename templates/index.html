@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HaiEye Changer</title>
+</head>
+<body>
+    <h1>HaiEye Changer</h1>
+    <h1>Upload an Image and Change Hair & Eye Color</h1>
+
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <label for="image">Choose Image:</label>
+        <input type="file" name="image" id="image" required><br><br>
+
+        <label for="color">Choose Color for Hair and Eyes:</label>
+        <input type="color" name="color" id="color" value="#ff0000" required><br><br>
+
+        <button type="submit">Upload Image</button>
+    </form>
+</body>
+</html>
